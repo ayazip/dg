@@ -47,7 +47,7 @@ struct LLVMDataDependenceAnalysisOptions : public LLVMAnalysisOptions,
         functionModelAddDef("strncpy", {0, Offset(0), 2});
         functionModelAddUse("strncpy", {1, Offset(0), 2});
 
-        functionModelAddDef("fread",  {0, Offset(0), 2});
+        functionModelAddDef("fread",  {0, Offset(0), Offset::getUnknown()});
         functionModelAddDef("fgets",  {0, Offset(0), Offset::getUnknown()});
 
         ///
